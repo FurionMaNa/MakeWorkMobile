@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setLoadWithOverviewMode(true);
-        webView.loadUrl("https://parstablephp.000webhostapp.com/index.html");
-        historyArray.add("https://parstablephp.000webhostapp.com/index.html");
+        webView.loadUrl("http://andreymana.beget.tech/index.html");
+        historyArray.add("http://andreymana.beget.tech/index.html");
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if(url.contains("https://parstablephp.000webhostapp.com/")){
+                if(url.contains("http://andreymana.beget.tech")){
                     historyArray.add(url);
                     return false;
                 }
