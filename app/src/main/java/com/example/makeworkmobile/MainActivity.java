@@ -3,6 +3,7 @@ package com.example.makeworkmobile;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
@@ -29,13 +30,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         webView=findViewById(R.id.webPanel);
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
+        webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setDomStorageEnabled(true);
-        webView.loadUrl("file:///android_asset/index.html");
-        historyArray.add("file:///android_asset/index.html");
+        webView.getSettings().setLoadWithOverviewMode(true);
+        webView.loadUrl("https://parstablephp.000webhostapp.com/index.html");
+        historyArray.add("https://parstablephp.000webhostapp.com/index.html");
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if(url.contains("file:///android_asset/")){
+                if(url.contains("https://parstablephp.000webhostapp.com/")){
                     historyArray.add(url);
                     return false;
                 }
