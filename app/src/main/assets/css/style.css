@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../fonts/Bahnschrift.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+    }
+    @font-face {
+        font-family: 'busorama';
+        src: url(../fonts/busorama.ttf) format("truetype");
+        font-style: normal; 
+        font-weight: normal; 
+        }
+        @font-face {
+            font-family: 'sans_mf';
+            src: url(../fonts/Sans_ms.ttf) format("truetype");
+            font-style: normal; 
+            font-weight: normal; 
+            }
+            @media screen and (min-width:480px) and (max-width:800px) {
+               .content{
+                   font-size: 10px;;
+               }
+              }
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 100%;
+    font-size: 100%;
+}
+p{
+    margin:0;
+}
+.inform{
+    background: #e6e6e6;
+    width:10%;
+    position: absolute;
+    padding:10px;
+    border-radius: 5%;
+    font-family: 'busorama';
+    margin-top: 31.3%;
+    margin-left: 13%;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+.button{
+    position: absolute;
+    background: #2e3192;
+    color: #fff;
+    font-family: 'busorama';
+    padding:10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #e97d1d;
+    margin-top: 78%;
+    margin-left: 2%;
+    cursor:pointer;
+}
+.button:hover{
+    transition: 0.5s;
+    color:#e97d1d;
+}
+header{
+    padding:20px;
+    font-size: 150%;
+    background: #e97d1d;
+    color:#fff;
+ 
+    font-family: arial;
+
+}
+.line{
+    display: inline-block;
+}
+.register{
+    float:right;
+    margin-right: 15%;
+    width:50%;
+}
+.change_city{
+    margin-left: 15%;
+    font-family: 'busorama';
+}
+.customer, .executor{
+    
+    margin-left: 4%;
+    cursor: pointer;
+    float: right;
+    font-family: 'busorama';
+}
+.customer a:hover{
+    transition:0.5s;
+    color:#C5CBE3;
+}
+.change_city a:hover{
+    transition:0.5s;
+    color:#C5CBE3;
+}
+.executor a:hover{
+    transition:0.5s;
+    color:#C5CBE3;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+.find{
+    position:absolute;
+    width:70%;
+    left:15%;
+    top:15%;
+    background: #fff;}
+    .main_head{
+        text-align: center;
+        font-family: 'Bahnschrift';
+        margin-left: 40px;
+        font-size: 6em;
+        padding:25px;
+    }
+    .content{
+        background: #fff;
+        color: #fb6b45;
+        font-family: 'busorama';
+        font-size: 25px;
+        z-index: 10;
+        width:15%;
+        text-align: center;
+       font-weight: lighter;
+        padding:10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        cursor: pointer;
+    }
+    .content:hover{
+        transition:0.5s;
+        
+        background: #C5CBE3;
+    }
+    footer{
+        margin-top:12%;
+        background:#4c515b;
+        color: #fff;
+        font-family: 'sans_mf';
+        font-size: 18px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .logname{
+        margin-left: 21%;
+        font-size: 150%;
+        
+    }
+    li a{
+        font-family: 'sans_mf';
+    }
+    ul li {
+        padding: 15px;
+        
+    }
+    .google{
+        color: #fff;
+        font-family: 'sans_mf';
+        background:gray;
+        position: absolute;
+        width:10vw;
+        padding:15px;
+        margin-top: 5%;
+        left:4vw;
+        font-size: 1.2em;
+        opacity: 90%;
+    }
